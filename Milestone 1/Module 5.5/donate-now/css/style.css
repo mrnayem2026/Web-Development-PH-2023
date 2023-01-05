@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Manrope&family=Poppins&display=swap');
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+
+/* *? Reuse Able section style start  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.reuseable {
+    text-align: center;
+    padding: 130px 0 50px 0;
+}
+
+.reuseable h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    color: #121212;
+}
+
+.reuseable p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #707070;
+    padding: 20px 375px 0 375px;
+
+}
+
+
+/* <section class="reuseable">
+<h2>Donate Today</h2>
+<p>Lorem ipsum dolor sit amet, usu cu esse possit referrentur, at eam falli <br> deterruisset. No duo populo animal noluisse, enim</p>
+</section> */
+
+/* *? Reuse Able section style End */
