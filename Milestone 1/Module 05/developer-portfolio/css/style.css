@@ -264,4 +264,89 @@ nav ul li button {
 }
 
 /* ! Card Section styel End  */
+
+
+/* !Resuem Section styel End  */
+.resuem {
+    margin: 0 277px 117px 230px;
+}
+
+.resuem-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: #181818;
+    padding-bottom: 113px;
+}
+
+.resume-info-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resume-info-item h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    color: #474747;
+}
+
+.resume-info-item h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 34px;
+    color: #474747;
+    padding: 30px 0 10px 0;
+}
+
+.p1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #757575;
+}
+
+.p2 {
+    padding: 20px 0 30px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575;
+    width: 511px;
+    height: 84px;
+}
+
+.br {
+    width: 558px;
+    border: 1px solid #D1D1D1;
+    margin: 50px 0 30px 0;
+}
+
+.CV-BTN {
+    text-align: center;
+    margin: 50px 0 113px 0;
+    padding: 18px 17px;
+}
+
+.CV-BTN button {
+    padding: 18px 17px;
+    border-style: none;
+    background: #FD6E0A;
+    border-radius: 5px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* ! Resuem Section styel End  */
 /* *? Main  styel End */
