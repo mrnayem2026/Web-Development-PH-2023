@@ -9,14 +9,24 @@
 }
 
 /* *? Header styel Start  */
+
+
+/* ! navbar styel Start */
 header {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 230px;
+    background: #FFF8F3;
+    background-image: url(../images/header_bg.png),url(../images/developer.png);
+    background-repeat:no-repeat;
+    background-position: right  bottom, left ;
 }
 
-header h2 {
-    font-family: 'Open Sans';
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 230px;
+    padding-top: 50px;
+}
+
+.navbar h2 {
     font-style: normal;
     font-weight: 800;
     font-size: 45px;
@@ -24,20 +34,19 @@ header h2 {
     color: #181818;
 }
 
-header h2 span {
+.navbar h2 span {
     color: #FD6E0A;
 }
 
 nav ul {
     display: flex;
+    align-items: center;
 }
 
 nav ul li {
-    position: relative;
-    top: 22px;
     list-style: none;
     margin-right: 50px;
-    font-family: 'Open Sans';
+    ;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -50,14 +59,85 @@ nav ul li button {
     border-style: none;
     background: #FD6E0A;
     border-radius: 5px;
-    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 27px;
     color: #FFFFFF;
-    position: relative;
-    top: -14px;
 }
+
+/* ! navbar styel end */
+
+/* ! Banner styel Start */
+.banner {
+    margin: 0 230px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner img {
+    padding-top: 50px;
+    margin-right: 10px;
+}
+
+article h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 61px;
+    color: #474747;
+}
+
+article h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 85px;
+    color: #181818;
+    padding: 5px 0 20px 0;
+}
+
+article p {
+    width: 585px;
+    height: 60px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+}
+
+.btn {
+    margin-top: 30px;
+}
+
+.btn button:nth-child(1) {
+    padding: 18px 17px;
+    background: #FD6E0A;
+    border-radius: 5px;
+    border-style: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn button:nth-child(2) {
+    margin-left: 30px;
+    padding: 18px 23px;
+    border: 1px solid #FD6E0A;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FD6E0A;
+    background: #FFF8F3;
+}
+
+/* ! Banner  styel End  */
 
 /* *? Header styel End */
