@@ -14,9 +14,9 @@
 /* ! navbar styel Start */
 header {
     background: #FFF8F3;
-    background-image: url(../images/header_bg.png),url(../images/developer.png);
-    background-repeat:no-repeat;
-    background-position: right  bottom, left ;
+    background-image: url(../images/header_bg.png), url(../images/developer.png);
+    background-repeat: no-repeat;
+    background-position: right bottom, left;
 }
 
 .navbar {
@@ -81,7 +81,7 @@ nav ul li button {
     margin-right: 10px;
 }
 
-article h3 {
+.banner article h3 {
     font-style: normal;
     font-weight: 600;
     font-size: 45px;
@@ -89,7 +89,7 @@ article h3 {
     color: #474747;
 }
 
-article h1 {
+.banner article h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 85px;
@@ -97,7 +97,7 @@ article h1 {
     padding: 5px 0 20px 0;
 }
 
-article p {
+.banner article p {
     width: 585px;
     height: 60px;
     font-style: normal;
@@ -141,3 +141,62 @@ article p {
 /* ! Banner  styel End  */
 
 /* *? Header styel End */
+
+
+/* *? Main styel Start */
+/* ! About section styel Start */
+.about {
+    margin: 130px 230px;
+    background: #FFF8F3;
+    border-radius: 10px;
+    padding: 130px 156px;
+}
+
+.about article {
+    text-align: center;
+}
+
+.about article h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    color: #181818;
+}
+
+.about article p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #757575;
+    padding: 30px 156px 30px 156px;
+
+}
+
+.user-info-list {
+    display: flex;
+    padding: 30px 156px 0 156px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.user-info p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #757575;
+}
+
+.user-info h5 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #474747;
+}
+/* ! About section styel End  */
+/* *? Main  styel End */
