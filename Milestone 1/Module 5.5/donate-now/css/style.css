@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Lobster&family=Manrope&family=Poppins&display=swap');
-/* 
-font-family: 'Inter', sans-serif;
-font-family: 'Lobster', cursive;
-font-family: 'Manrope', sans-serif;
-font-family: 'Poppins', sans-serif; */
-
 
 /* *? Reuse Able section style start  */
 * {
@@ -254,7 +248,7 @@ header {
 
 
 /* *? They need us to suvive  section style end */
-.they-need-us{
+.they-need-us {
     margin: 100px 268px 100px 200px;
     display: flex;
     justify-content: space-evenly;
@@ -283,5 +277,77 @@ header {
     color: #707070;
 }
 
-
 /* *? They need us to suvive  section style end */
+
+
+/* *? Get My Updates  section style Start */
+.subscrib {
+    margin: 0 416px 130px 416px;
+    background: #FFF4D6;
+    text-align: center;
+    padding: 76px 188px;
+}
+
+.subscrib input[type="email"] {
+    padding: 14px 218px 14px 17px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #AA9F9F;
+    border-style: none;
+    background: #D9D9D9;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.subscrib input[type="submit"] {
+    position: relative;
+    left: -5px;
+    padding: 14px 42px;
+    margin: 0;
+    border-style: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    background: #FF5959;
+    border-radius: 0px 5px 5px 0px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+/* *? Get My Updates section style end */
+
+
+/* *? footer section style Start */
+footer {
+    padding: 43px 625px;
+    text-align: center;
+    background: #0B0D17;
+}
+
+footer h1 {
+    font-family: 'Lobster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    color: #FF5959;
+    padding-bottom: 24px;
+}
+
+footer p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'liga' off;
+    color: #D9DBE1;
+}
+
+/* *? footersection style end */
