@@ -95,6 +95,8 @@ header {
 }
 
 /* *? Header  section style End */
+
+/* *? Donate Today section style Start */
 .donate-today {
     padding: 0 338px 0 338px;
     text-align: center;
@@ -146,7 +148,55 @@ header {
     border: 1px solid #DADADA;
 }
 
+/* *? Donate Today section style End */
+
 /* *? Donate Today section style Start */
 
 
-/* *? Donate Today section style End */
+/* *? Our Donate Plan section style Start */
+.our-donate-plan {
+    padding: 0 158px 130px 158px;
+}
+
+.donate-plan-items {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.donate-plan-items div:nth-child(1){
+    background: rgba(79, 157, 166, 0.1);
+}
+.donate-plan-items div:nth-child(2){
+    background: rgba(255, 89, 89, 0.1);
+}
+.donate-plan-items div:nth-child(3){
+    background: #FFF4D6;
+}
+
+.donate-plan-item {
+    
+    padding: 63px 22px 54px 22px;
+    border-radius: 5px;
+}
+
+.donate-plan-item h2 {
+    padding: 31px 0 16px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #121212;
+}
+
+.donate-plan-item p {
+    width: 315px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #707070;
+}
+
+/* *? Our Donate Plan section style end */
