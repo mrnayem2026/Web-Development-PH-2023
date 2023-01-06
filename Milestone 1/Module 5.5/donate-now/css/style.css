@@ -161,20 +161,23 @@ header {
 .donate-plan-items {
     display: flex;
     justify-content: space-evenly;
-    
+
 }
-.donate-plan-items div:nth-child(1){
+
+.donate-plan-items div:nth-child(1) {
     background: rgba(79, 157, 166, 0.1);
 }
-.donate-plan-items div:nth-child(2){
+
+.donate-plan-items div:nth-child(2) {
     background: rgba(255, 89, 89, 0.1);
 }
-.donate-plan-items div:nth-child(3){
+
+.donate-plan-items div:nth-child(3) {
     background: #FFF4D6;
 }
 
 .donate-plan-item {
-    
+
     padding: 63px 22px 54px 22px;
     border-radius: 5px;
 }
@@ -200,3 +203,85 @@ header {
 }
 
 /* *? Our Donate Plan section style end */
+
+
+/* *? Their lives depend on your donation section style Start*/
+.lives-depend {
+    margin: 0 268px 100px 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.lives-depend-description h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    color: #121212;
+    padding-bottom: 10px;
+    padding: 10px 94px 30px 157px;
+}
+
+.lives-depend-description p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 94px 30px 157px;
+    color: #707070;
+}
+
+.reuseable-tow {
+    margin-left: 160px;
+    border-style: none;
+    padding: 16px 22px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    background: #FF5959;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+
+/* *? Their lives depend on your donation  section style end */
+
+
+/* *? They need us to suvive  section style end */
+.they-need-us{
+    margin: 100px 268px 100px 200px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.they-need-us-description h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54px;
+    color: #121212;
+    padding-bottom: 10px;
+    padding: 10px 94px 30px 157px;
+}
+
+.they-need-us-description p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 10px 94px 30px 157px;
+    color: #707070;
+}
+
+
+/* *? They need us to suvive  section style end */
