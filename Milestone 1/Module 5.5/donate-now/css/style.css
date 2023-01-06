@@ -46,3 +46,53 @@ font-family: 'Poppins', sans-serif; */
 </section> */
 
 /* *? Reuse Able section style End */
+
+
+/* *? Header section style Start */
+header {
+    background-image: url(../images/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner {
+    padding: 300px 307px;
+    text-align: center;
+    height: 870px;
+    background: linear-gradient(360deg, #121212 0%, rgba(18, 18, 18, 0) 100%);
+}
+
+.heading-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 79px;
+    color: #FFFFFF;
+}
+
+.heading-description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 25PX 0 35PX 0;
+}
+
+.banner button {
+    padding: 16px 12px;
+    border-style: none;
+    background: #FF5959;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+
+/* *? Header  section style End */
