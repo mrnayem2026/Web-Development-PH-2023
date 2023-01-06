@@ -81,7 +81,7 @@ header {
     padding: 25PX 0 35PX 0;
 }
 
-.banner button {
+.reuse-btn-one {
     padding: 16px 12px;
     border-style: none;
     background: #FF5959;
@@ -94,5 +94,59 @@ header {
     color: #FFFFFF;
 }
 
-
 /* *? Header  section style End */
+.donate-today {
+    padding: 0 338px 0 338px;
+    text-align: center;
+}
+
+.taka-items {
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.taka-item {
+    padding: 44px 25px;
+    background: #FAFAFA;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    transition: 0.1s;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #707070;
+    /* transition: all 0.5s ease; */
+}
+
+.taka-item:hover {
+    background: #FFEEEE;
+    border: 2px solid #FF5959;
+    border-radius: 5px;
+    color: #FF5959;
+}
+
+.our-am {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #B3B3B3;
+}
+
+.line {
+    /* text-align: center; */
+    margin: 10px 338px 30px 338px;
+    /* width: 765px; */
+    border: 1px solid #DADADA;
+}
+
+/* *? Donate Today section style Start */
+
+
+/* *? Donate Today section style End */
