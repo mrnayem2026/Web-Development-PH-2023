@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-size: 45px;
+}
+.conatiner{
+    display: grid;
+    grid-template-columns: repeat(4,2fr);
+    column-gap:100px;
+    /* gap: 20px; */
+    /* grid-template-areas:
+     "a a a a    a a a a   d d d d"
+     "c c c c    c c c c   d d d d" 
+     "c c c c    c c c c   d d d d"
+     "b b b b    b b b b    b b b b "; */
+}
+[class^="box-"]
+{
+    display: grid;
+    place-items: center;
+    border: 5px solid sienna;
+    background: skyblue;
+}
+/* .box-1{
+    grid-area: a;
+}
+.box-2{
+    grid-area: c;
+}
+.box-3{
+    grid-area: d;
+}
+.box-4{
+    grid-area: b;
+} */
