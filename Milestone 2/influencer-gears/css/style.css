@@ -1,0 +1,16 @@
+/*? <========> Google fonts were imported below (Start) <========>  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope:wght@700&family=Poppins:wght@500;600;700&display=swap');
+/*? <========> Google fonts were imported below (End) <========>  */
+
+
+/*! <$$$$> Overall website css style start  <$$$$>  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border-style: none;
+    font-family: 'Poppins', sans-seri
+}
+
+/*! <$$$$> Overall website css style end  <$$$$>  */
