@@ -236,3 +236,46 @@ color: #FFFFFF;
 /*! <$$$$> featured-products Section css style End <$$$$>  */
 
 /*** <$$$$> Main Section css style end  <$$$$>  */
+
+/*** <$$$$> footer-content Section css style Start  <$$$$>  */
+footer{
+    background: #0A0826;
+    color: #FFFFFF;
+    text-align: center;
+}
+.footer-content{
+    padding: 60px 590px;
+}
+.footer-title{
+    font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+
+}
+.copyright{
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #D9DBE1;
+}
+.all-rights{
+    font-family: 'Manrope';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 24px;
+color: #D9DBE1;
+padding-bottom: 17px;
+}
+.social-link ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+}
+
+/*** <$$$$> footer-content Section css style end  <$$$$>  */
