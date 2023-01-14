@@ -69,6 +69,7 @@ nav ul a {
 
 .start-your-journey {
     margin-top: 145.8px;
+    /* display: flex; */
 }
 
 .start-your-journey-title {
@@ -127,9 +128,15 @@ nav ul a {
 
 /*! <$$$$> Popular Collection Section css style Start <$$$$>  */
 .popular-collection {
-    margin: 100px 197px 100px 196px;
+    margin: 100px 197px;
+    display: flex;
+    flex-direction: column;
 }
 
+/* .popular-collection-items-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
 .popular-collection-title {
     font-style: normal;
     font-weight: 600;
@@ -146,132 +153,150 @@ nav ul a {
     justify-items: center;
     padding-top: 30px;
 }
-.popular-collection-item{
+
+.popular-collection-item {
+    margin-top: 30px;
     width: 329px;
-height: 476px;
-background: #FFFFFF;
-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-border-radius: 5px;
-padding: 20px 15px;
+    height: 476px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 20px 15px;
 }
-.item-content-title{
+
+.item-content-title {
     font-style: normal;
-font-weight: 500;
-font-size: 28px;
-line-height: 40px;
-color: #18191F;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
 }
-.price{
+
+.price {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 150%;
-padding: 6px 0 4px 0;
-color: rgba(0, 0, 0, 0.87);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    padding: 6px 0 4px 0;
+    color: rgba(0, 0, 0, 0.87);
 }
-.rating i{
+
+.rating i {
     color: gold;
     font-size: 10px;
 }
-.rating span{
-    
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 22px;
-color: #5E6366;
+
+.rating span {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #5E6366;
 }
-.item-description{
+
+.item-description {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 143%;
-letter-spacing: 0.018em;
-color: #787885;
-padding-top: 6px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.018em;
+    color: #787885;
+    padding-top: 6px;
 }
 
 /*! <$$$$> Popular Collection Section css style End <$$$$>  */
 
 /*! <$$$$> featured-products Section css style Start <$$$$>  */
-.featured-products{
+.featured-products {
     margin: 100px 165px;
     display: flex;
     justify-content: space-evenly;
 }
-.featured-products-content{
+
+.featured-products-content {
     width: 610px;
 }
-.featured-title{
+
+.featured-title {
     font-style: normal;
-font-weight: 700;
-font-size: 38px;
-line-height: 60px;
-color: #0A0826;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    color: #0A0826;
 }
-.featured-description{
+
+.featured-description {
     font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 28px;
-padding: 18px 0 18px 0;
-color: #6C6C6C;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 18px 0 18px 0;
+    color: #6C6C6C;
 
 }
-.featured-btn{
+
+.featured-btn {
     padding: 10px 24px;
     background: #E02C6D;
     font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 24px;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
 }
-.featured-btn i{
-   padding-left: 10px;
+
+.featured-btn i {
+    padding-left: 10px;
 }
+
 /*! <$$$$> featured-products Section css style End <$$$$>  */
 
 /*** <$$$$> Main Section css style end  <$$$$>  */
 
 /*** <$$$$> footer-content Section css style Start  <$$$$>  */
-footer{
+footer {
     background: #0A0826;
     color: #FFFFFF;
     text-align: center;
 }
-.footer-content{
+
+.footer-content {
     padding: 60px 590px;
 }
-.footer-title{
+
+.footer-title {
     font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
 
 }
-.copyright{
+
+.copyright {
     font-family: 'Manrope';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 24px;
-color: #D9DBE1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
 }
-.all-rights{
+
+.all-rights {
     font-family: 'Manrope';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 24px;
-color: #D9DBE1;
-padding-bottom: 17px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #D9DBE1;
+    padding-bottom: 17px;
 }
-.social-link ul{
+
+.social-link ul {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,3 +304,134 @@ padding-bottom: 17px;
 }
 
 /*** <$$$$> footer-content Section css style end  <$$$$>  */
+
+.hide {
+    display: none;
+}
+
+
+/*? [[[]]] Mobile responsive style Start  [[[]]]*/
+
+/* Extra extra large device responsive start */
+@media screen and (min-width:1200px) and (max-width:1400px) {
+    /* ?navbar and  banner Section responsive start */
+    .banner {
+        flex-direction: column-reverse;
+        background-position: top center;
+        justify-content: center;
+        align-items: center;
+    }
+    .start-your-journey {
+        margin-top: 13.8px;
+      }
+
+    /* ? navbar and  banner  Section responsive end */
+}
+/* Extra extra large device responsive End*/
+
+/* Extra large device responsive Start*/
+@media screen and (min-width:992px) and (max-width:1199px){
+       /* ?navbar and  banner Section responsive start */
+       .banner {
+        flex-direction: column-reverse;
+        background-position: top center;
+        justify-content: center;
+        align-items: center;
+    }
+    .start-your-journey {
+        margin-top: 13.8px;
+      }
+
+    /* ? navbar and  banner  Section responsive end */
+}
+/*  Extra large device responsive End*/
+
+
+/* Large device responsive Start*/
+@media screen and (min-width:768px) and (max-width:991px){
+     /* ?navbar and  banner Section responsive start */
+     .banner {
+        flex-direction: column-reverse;
+        background-position: top center;
+        justify-content: center;
+        align-items: center;
+    }
+    .start-your-journey {
+        margin-top: 13.8px;
+      }
+      .navber{
+        justify-content: center;
+      }
+      nav{
+        display: none;
+      }
+      .navber-logo{
+        margin-top: 35px;
+      }
+
+    /* ? navbar and  banner  Section responsive end */
+}
+/* Large device responsive End*/
+
+/* Medium device responsive Start*/
+@media screen and (min-width:576px) and (max-width:767px){
+     /* ?navbar and  banner Section responsive start */
+     .banner {
+        flex-direction: column-reverse;
+        background-position: top center;
+        justify-content: center;
+        align-items: center;
+        margin: 49px 26px 100px 42px;
+    }
+    .start-your-journey {
+        margin-top: 13.8px;
+      }
+      .navber{
+        justify-content: center;
+      }
+      nav{
+        display: none;
+      }
+      .navber-logo{
+        margin-top: 35px;
+      }
+
+    /* ? navbar and  banner  Section responsive end */
+}
+/* Medium device responsive End*/
+
+/* small device responsive Start*/
+@media screen and (max-width:575px){
+      /* ?navbar and  banner Section responsive start */
+      .banner {
+        flex-direction: column-reverse;
+        background-position: top center;
+        justify-content: center;
+        align-items: center;
+        margin: 49px 0 100px 0;
+    }
+    .start-your-journey {
+        margin-top: 13.8px;
+        display: flex;
+        flex-direction: column;
+      }
+      .start-your-journey-btn{
+        flex-shrink: 0;
+      }
+      .navber{
+        justify-content: center;
+      }
+      nav{
+        display: none;
+      }
+      .navber-logo{
+        margin-top: 35px;
+      }
+
+    /* ? navbar and  banner  Section responsive end */
+}
+/* small device responsive End*/
+
+
+
+/*? [[[]]] Mobile responsive style End  [[[]]]*/
