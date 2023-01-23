@@ -1,0 +1,11 @@
+.feature-containt {
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.hr {
+    width: 58.5px;
+    height: 0px;
+    border: 1px solid #E76F51;
+    border-radius: 1px;
+}
