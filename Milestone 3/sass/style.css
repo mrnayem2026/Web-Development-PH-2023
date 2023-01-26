@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body h1 {
+  color: red;
+  font-size: 150px;
+  font-weight: 800;
+  font-style: italic;
+}
+body h1 div {
+  background-color: blue;
+}
+body h1 div ul {
+  display: flex;
+  gap: 15px;
+}
+body h1 div ul li {
+  list-style: none;
+  color: aqua;
+}
+
+h2 {
+  background-color: red;
+  font-size: 300px;
+  font-weight: 800;
+}/*# sourceMappingURL=style.css.map */
