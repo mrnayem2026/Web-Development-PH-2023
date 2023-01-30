@@ -4,4 +4,4 @@ function square(num)
     return square;
 }
 let tow_num_multiply = square(56);
-// console.log(tow_num_multiply);
+console.log(tow_num_multiply);
