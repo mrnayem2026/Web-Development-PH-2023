@@ -15,7 +15,7 @@
     <section class="grid grid-cols-3 gap-4 mx-auto w-3/4 pt-8">
         <div class="bg-black p-5 rounded-lg">
             <h1 class="text-3xl text-cyan-600">Your Deposit</h1>
-            <h2 class="text-5xl text-white">$<span>00</span> </h2>
+            <h2 class="text-5xl text-white">$<span id="yourDeposite">00</span> </h2>
         </div>
         <div class="bg-red-500 p-5 rounded-lg">
             <h1 class="text-3xl text-black">WithDraw</h1>
@@ -23,15 +23,15 @@
         </div>
         <div class="bg-amber-200 p-5 rounded-lg">
             <h1 class="text-3xl text-cyan-600">Balance</h1>
-            <h2 class="text-5xl text-black">$<span>00</span> </h2>
+            <h2 class="text-5xl text-black">$<span id="myBlance">00</span> </h2>
         </div>     
     </section>
 
     <section class="mt-8 w-3/4 mx-auto grid grid-cols-2 gap-4">
         <div class="bg-green-500 p-4 rounded-lg">
             <h1 class="text-3xl pb-2 uppercase text-blue-700">Your Deposit</h1>
-            <input type="text" class="w-3/4 p-1 rounded-lg " placeholder="$ Amaount you want to deposit"> <br>
-            <button class="bg-cyan-400 hover:bg-cyan-500 mt-2 p-1  rounded-lg text-base text-white">Deposit</button>
+            <input id="depositAmount" type="text" class="w-3/4 p-1 rounded-lg " placeholder="$ Amount you want to deposit"> <br>
+            <button id="deposit-btn" class="bg-cyan-400 hover:bg-cyan-500 mt-2 p-1  rounded-lg text-base text-white">Deposit</button>
         </div>
         <div class="bg-red-300 p-4 rounded-lg">
             <h1 class="text-3xl pb-2 uppercase text-blue-700">Your WithDraw</h1>
@@ -39,5 +39,6 @@
             <button class="bg-lime-200 hover:bg-lime-300 mt-2 p-1  rounded-lg text-base ">WithDraw</button>
         </div>
     </section>
+    <script src="js/deposit.js"></script>
 </body>
 </html>
