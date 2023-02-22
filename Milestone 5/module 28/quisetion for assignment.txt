@@ -1,0 +1,53 @@
+১) What is DOM and what is the purpose of DOM?
+
+DOM হলো API এর মতন যা web document এর জন্য
+programming interface তৈরি করে ।
+
+DOM এর পূর্ণরুপ হলো Document Object Model .
+DOM দ্বারা HTML এর structure,style এবং content পরিবর্তন করা যায়।
+
+DOM মূলত HTML কে  Node এবং Object হিসাবে represent করে।
+আর এই DOM এর দ্বারা একটি web page এর সাথে programming language
+এর Interface করা হয় ।
+
+২) How will you select HTML elements using DOM? Name the DOM methods.
+
+আমরা DOM, HTML এ ব্যবহার করার জন্য HTML elements গুলোকে কয়েক ভাবে select
+করতে পারি ।
+
+তার মধ্য ৫ টি essential methods এর নাম নিচে  দেওয়া হলো।
+
+১ ==> getElemntById('idName');
+
+এই methods এর মাধ্যমে HTML এর id দ্বারা select করা যায়।
+
+২ ==> getElemntsByTagName('tagName');
+
+এই methods এর মাধ্যমে HTML এর tagName দ্বারা select করা যায়।
+
+3 ==> node
+4 ==> createElement();
+5 ==> appendChild();
+
+
+3 -- What is event bubble?
+
+event bubble এর ধারনাটা একদম normal ।
+যখন একটি event তৈরি হয় কোন একটি HTML Elements 
+এর উপর তখন , event Handeler টা প্রথমে event হয়
+যেটার উপর event Handeler করা হয়েছে ।
+
+তারপর , তার parent এ, এরকম  করতে করতে উপরের 
+HTML Elements গুলোতে event হয়।
+
+
+Git private repo Link : https://github.com/programming-hero-web-course2/b7a5-geometry-genius-assignment-mrnayem2026
+Live link : unsightly-wave.surge.sh 
+
+
+
+
+
+
+
+
