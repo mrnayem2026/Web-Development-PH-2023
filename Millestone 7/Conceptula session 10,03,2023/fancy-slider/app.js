@@ -121,8 +121,10 @@ searchBtn.addEventListener('click', function () {
   if(search.value.length === 0)
   {
     alert("Valo Koira input de!")
+    search.value ="";
   } else{
     getImages(search.value)
+    search.value = "";
   }
   sliders.length = 0;
 })
