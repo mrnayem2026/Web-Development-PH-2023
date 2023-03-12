@@ -9,10 +9,10 @@
     <!-- Tailwind CSS and DasiyUI Link Start   -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind CSS and DasiyUI Link End  -->
+    <!-- Tailwind CSS and DasiyUI Link End  overflow-y-hidden-->
 </head>
 
-<body class="bg-gradient-to-r from-cyan-500 to-blue-500 overflow-y-hidden">
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500 ">
     <!-- Main Section HTML5 Structure Start  -->
     <main>
         <img src="/img/bg.jpg" class="bg-contain object-fill w-full opacity-50  relative" alt="Contack Image">
@@ -21,32 +21,37 @@
             <!--? for Name Input Start  -->
                 <section class="pt-3">
                     <label for="name" class="text-3xl font-extrabold block pb-3 lg:text-left lg:pl-36">Name:</label>
-                    <input type="text" placeholder="Enter your name..." class="input input-bordered input-accent w-full max-w-xs" />
-                    <button class="btn btn-error text-lg ml-3">Delete Name</button>
-                    <button class="btn btn-active btn-secondary text-lg">Send Name</button>
+                    <input id="nameInputField" type="text" placeholder="Enter your name..." class="input input-bordered input-accent w-full max-w-xs" />
+                    <button id="deleteName" onclick="localStoragedeleteItemByIdAndKey('name')" class="btn btn-error text-lg ml-3">Delete Name</button>
+                    <button id="sendName" class="btn btn-active btn-secondary text-lg">Send Name</button>
                 </section>
             <!--? for Name Input End  -->
-            <!--? for Name Input Start  -->
+            <!--? forEmail Input Start  -->
                 <section class="pt-3">
                     <label for="name" class="text-3xl font-extrabold block pb-3 lg:text-left lg:pl-36">Email:</label>
-                    <input type="text" placeholder="Enter your email..." class="input input-bordered input-accent w-full max-w-xs" />
-                    <button class="btn btn-error text-lg ml-3">Delete Email</button>
-                    <button class="btn btn-active btn-secondary text-lg">Send Email</button>
+                    <input id="emailInputField" type="text" placeholder="Enter your email..." class="input input-bordered input-accent w-full max-w-xs" />
+                    <button  onclick="localStoragedeleteItemByIdAndKey('email')" class="btn btn-error text-lg ml-3">Delete Email</button>
+                    <button id="sendEmail" class="btn btn-active btn-secondary text-lg">Send Email</button>
                 </section>
-            <!--? for Name Input End  -->
-            <!--? for Name Input Start  -->
+            <!--? for Email Input End  -->
+            <!--? for Message Input Start  -->
                 <section class="pt-3 ">
                     <label for="name" class="text-3xl font-extrabold block pb-3 lg:text-left lg:pl-36">Message:</label>
-                    <textarea class="textarea textarea-primary w-2/4 max-w-xs" placeholder="Enter your message..."></textarea>
+                    <textarea id="messageInputField" class="textarea textarea-primary w-2/4 max-w-xs" placeholder="Enter your message..."></textarea>
                     <!-- <input type="text" placeholder="" class="input input-bordered input-accent w-full max-w-xs" /> -->
-                    <button class="btn btn-error text-lg ml-3">Delete Message</button>
-                    <button class="btn btn-active btn-secondary text-lg">Send Message</button>
+                    <button  onclick="localStoragedeleteItemByIdAndKey('message')" class="btn btn-error text-lg ml-3">Delete Message</button>
+                    <button id="sendMessage" class="btn btn-active btn-secondary text-lg">Send Message</button>
                 </section>
-            <!--? for Name Input End  -->
+            <!--? for Message Input End  -->
+            <button id="resetLocalStorage" class="btn btn-warning text-2xl font-bold mt-10">Reset</button>
         </section>
         <!--! from html Structure End  -->
     </main>
     <!-- Main Section HTML5 Structure End  -->
+
+    <!-- External JavaScript  -->
+
+    <script src="js/index.js"></script>
 </body>
 
 </html>
