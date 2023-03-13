@@ -32,10 +32,10 @@ const getImages = (query) => {
   fetch(`https://pixabay.com/api/?key=${KEY}=${query}&image_type=photo&pretty=true`)
     .then(response => response.json())
     .then(data => {
-      if(data.hits.length === 0){
+      if (data.hits.length === 0) {
         alert('Valo koira input de!')
-      } else{
-      showImages(data.hits)
+      } else {
+        showImages(data.hits)
       }
     })
     .catch(err => console.log(err))
@@ -45,12 +45,13 @@ let slideIndex = 0;
 const selectItem = (event, img) => {
   let element = event.target;
   element.classList.add('added');
- 
   let item = sliders.indexOf(img);
   if (item === -1) {
     sliders.push(img);
   } else {
-    alert('Hey, Already added !')
+    // alert('Hey, Already added !')
+    sliders = sliders.filter(item =>{item != img});
+    element.classList.remove('added');
   }
 }
 var timer
@@ -73,7 +74,7 @@ const createSlider = () => {
   document.querySelector('.main').style.display = 'block';
   // hide image aria
   imagesArea.style.display = 'none';
-  const duration = document.getElementById('duration').value || 1000;
+
   sliders.forEach(slide => {
     let item = document.createElement('div')
     item.className = "slider-item";
@@ -83,10 +84,21 @@ const createSlider = () => {
     sliderContainer.appendChild(item)
   })
   changeSlide(0)
-  timer = setInterval(function () {
-    slideIndex++;
-    changeSlide(slideIndex);
-  }, duration);
+  const duration = document.getElementById('duration').value || 1000;
+  console.log(duration);
+  if(duration <  0 ){
+    // alert("Please give positive number")  
+    document.getElementById('aleartForPositiveNumber').classList.remove('d-none')
+    document.querySelector('.main').style.display = 'none';
+    console.log("HEllo  Nayem form negitive number");
+    return;
+  } else {
+    document.getElementById('aleartForPositiveNumber').classList.add('d-none')
+    timer = setInterval(function () {
+      slideIndex++;
+      changeSlide(slideIndex);
+    }, duration);
+  }
 }
 
 // change slider index 
@@ -115,19 +127,33 @@ const changeSlide = (index) => {
   items[index].style.display = "block"
 }
 
+
+
 searchBtn.addEventListener('click', function () {
   document.querySelector('.main').style.display = 'none';
   clearInterval(timer);
-  if(search.value.length === 0)
-  {
+
+  if (search.value.length === 0) {
     alert("Valo Koira input de!")
-    search.value ="";
-  } else{
+    search.value = "";
+  } else {
     getImages(search.value)
     search.value = "";
   }
   sliders.length = 0;
 })
+
+// Enter press key start
+
+var search = document.getElementById("search");
+search.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    searchBtn.click();
+  }
+});
+
+// Enter press key  end
 
 sliderBtn.addEventListener('click', function () {
   createSlider()
