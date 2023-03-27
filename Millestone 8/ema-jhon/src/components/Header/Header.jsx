@@ -8,7 +8,7 @@ const Header = () => {
             <div className=' container mx-auto flex justify-between py-4'>
                 <img src={logo} alt="" />
                 <div>
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal px-1 text-xl font-semibold">
                         <li><a>Order</a></li>
                         <li><a>Order Review</a></li>
                         <li><a>Manage Inventory</a></li>
