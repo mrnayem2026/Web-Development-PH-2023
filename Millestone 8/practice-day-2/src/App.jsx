@@ -11,12 +11,12 @@ function App() {
     <div className="App">
       <Header></Header>
       <div className='container mx-auto grid  grid-cols-12'>
-        <div className='col-span-10'>
+        <div className='col-span-12 flex gap-10'>
           <MealCard></MealCard>
         </div>
-        <div  className='col-span-2'>
+        {/* <div  className='col-span-2'>
           <LeftSide></LeftSide>
-        </div>
+        </div> */}
       </div>
     </div>
   )
