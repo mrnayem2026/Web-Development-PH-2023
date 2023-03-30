@@ -63,8 +63,8 @@ body {
 }
 #result {
   position: fixed;
-  top: 10%; 
-  left: 10%;
+  top: 50%; 
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 250px;
   width: 400px;
@@ -142,7 +142,9 @@ button {
 }
 
 #histories {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -185,6 +187,9 @@ button {
   .box-container {
     padding: 0 20px;
     width: 100%;
+  }
+  #histories {
+    grid-template-columns: 1fr;
   }
   .card {
     flex-direction: column;

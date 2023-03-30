@@ -1,0 +1,35 @@
+Local Storage  
+
+Local Storage হলো Browser এর Store এ কিছু Data রাখার স্থান  ।
+প্রতিটি Web-Site বা Web App এর জন্য 10MB করে Data রাখতে পারবে Lifetime 
+এর জন্য ।
+
+Local Storage  এ Sensitive Data রাখা উচিত নয়।
+
+আমরা Local Storage কে 'localStorage'
+এই Object দ্বারা Access করতে পারবো ।
+
+আর Local Storage এর কিছু Object :
+
+localStorage.setItem('myCat', 'Tom');
+localStorage.getItem('myCat');
+localStorage.removeItem('myCat');
+localStorage.clear();
+
+Session Storage
+
+Session Storage এবং Local Storage  
+এর সব দিক থেকে মিল আছে শুধু একটি বাদে ।
+
+এই একটির কারনে Session Storage কে আলাদা করে রেখেছে।
+আর তাহলো কোন App এর জন্য কিছু Data যখন
+Session Storage এ রাখা হয়েছে তখন
+সেই Data ততক্ষন পর্যন্ত থাকবে যতক্ষন ঐ Browser বা Tab Open থাকবে ।
+Browser বা Tab Open বন্ধ করলে ঐ Data আর থাকবে না।
+
+Session Storage এর কিছু Object :
+
+sessionStorage.setItem("key", "value");
+sessionStorage.getItem("key");
+sessionStorage.removeItem("key");
+sessionStorage.clear();
