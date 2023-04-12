@@ -6,10 +6,10 @@ import Lottie from 'lottie-react'
 
 const Home = () => {
     return (
-        <div >
+        <div className='flex flex-col lg:flex-row container mx-auto py-8'>
             {/* content of home Start  */}
-            <div>
-                <p>ON SALE!</p>
+            <div className='py-9'>
+                <p className='badge'>ON SALE!</p>
                 <p>A reader lives a <br />
                     thousand lives <span>before he dies</span></p>
                 <p>

@@ -31,6 +31,9 @@ export default function Roote() {
                 <nav>
                     <ul>
                         <li>
+                            <Link to={`/`}>Main page</Link>
+                        </li>
+                        <li>
                             <Link to={`/contacts/1`}>Your Name</Link>
                         </li>
                         <li>
