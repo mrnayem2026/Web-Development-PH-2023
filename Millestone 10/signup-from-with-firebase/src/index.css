@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.sing-in-btn{
+    @apply  bg-gradient-to-r from-cyan-500 to-blue-500 text-white w-2/6 tracking-widest font-black text-xl
+}
+
+.sign-in-method-btn{
+    @apply rounded-lg  bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 border-0 text-black w-2/6
+}

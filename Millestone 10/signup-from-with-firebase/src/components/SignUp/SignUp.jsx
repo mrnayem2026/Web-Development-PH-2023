@@ -4,8 +4,14 @@ import facebook from '../../assets/icon/facebook.png'
 import github from '../../assets/icon/github.png'
 import google from '../../assets/icon/google.png'
 import twitter from '../../assets/icon/twitter.png'
+import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 
 const SignUp = () => {
+
+    
+
+
+
     return (
         <div className='container mx-auto lg:py-36 rounded-3xl '>
             <div className="card  lg:card-side bg-base-100 shadow-xl">
@@ -17,14 +23,14 @@ const SignUp = () => {
                         <input type="password" placeholder='Password' className='text-2xl p-3 focus:outline-none placeholder-blue-600 bg-base-100 border-b-4 border-blue-600 w-2/4' />
                     </div>
                     <div className="card-actions justify-center py-4">
-                        <button className="btn btn-primary bg-gradient-to-r from-cyan-500 to-blue-500 text-white w-2/6 tracking-widest font-black text-xl">Singup</button>
+                        <button className="btn btn-primary sing-in-btn ">Singup</button>
                     </div>
 
                     <div className='flex flex-col justify-center items-center gap-1'>
-                        <button className='btn btn-primary rounded-lg  bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 border-0 text-black w-2/6'><img src={facebook} alt="facebook icon" className='w-10 pr-2 ' />Singup with facebook</button>
-                        <button className='btn btn-primary rounded-lg  bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 border-0 text-black w-2/6'><img src={github} alt="github icon"  className='w-10 pr-2'/>Singup with github</button>
-                        <button className='btn btn-primary rounded-lg  bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 border-0 text-black w-2/6'><img src={google} alt="google icon"  className='w-10 pr-2'/>Singup with google</button>
-                        <button className='btn btn-primary rounded-lg  bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400 border-0 text-black w-2/6'><img src={twitter} alt="twitter icon "  className='w-10 pr-2' />Singup with twitter</button>
+                        <button className='btn btn-primary sign-in-method-btn'><img src={facebook} alt="facebook icon" className='w-10 pr-2 ' />Singup with facebook</button>
+                        <button className='btn btn-primary sign-in-method-btn'><img src={github} alt="github icon"  className='w-10 pr-2'/>Singup with github</button>
+                        <button className='btn btn-primary sign-in-method-btn'><img src={google} alt="google icon"  className='w-10 pr-2'/>Singup with google</button>
+                        <button className='btn btn-primary sign-in-method-btn'><img src={twitter} alt="twitter icon "  className='w-10 pr-2' />Singup with twitter</button>
                     </div>
                     <div>
 
