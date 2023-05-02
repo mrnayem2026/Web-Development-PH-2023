@@ -1,15 +1,56 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { AuthContext } from '../providers/AuthProvides';
+
 
 const Login = () => {
+
+    const { signIn } = useContext(AuthContext);
+    const [succesLogIn,SetSuccesLogIn] = useState("");
+    const [errorLogIn,SeterrorLogIn] = useState("");
+
+    const handleLogin = (event) => {
+        event.preventDefault();
+
+        const form = event.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        // console.log(email, password);
+
+
+        signIn(email,password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                console.log(user);
+                SetSuccesLogIn("Hey! Welcome back. Bro/Sis")
+                form.reset();
+                // ...
+            })
+            .catch((error) => {
+                // const errorCode = error.code;
+                // const errorMessage = error.message;
+                // console.log(errorCode);
+                // console.log(errorMessage);
+                console.log(error);
+                SeterrorLogIn("Please register");
+                form.reset();
+            });
+
+    }
+
+
+
     return (
         <div className="hero min-h-screen bg-base-200">
             <div className="hero-content flex-col">
                 <div className="text-center">
                     <h1 className="text-5xl font-bold">Please Login !</h1>
+                    <h1>{succesLogIn}</h1>
+                    <h1>{errorLogIn}</h1>
                 </div>
                 <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                    <form className="card-body">
+                    <form className="card-body" onSubmit={handleLogin}>
                         <div className="form-control">
                             <label className="label">
                                 <span className="label-text">Email</span>

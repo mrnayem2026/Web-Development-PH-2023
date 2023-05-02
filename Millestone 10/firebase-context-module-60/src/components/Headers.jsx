@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../providers/AuthProvides';
 
 const Headers = () => {
+    
+    const {user} = useContext(AuthContext);
     return (
         <div>
         <div className="navbar bg-primary text-primary-content">
             <a className="btn btn-ghost normal-case text-xl">Auth Master</a>
             <Link className="btn btn-ghost normal-case text-xl" to="/">Home</Link>
             <Link className="btn btn-ghost normal-case text-xl" to="/orders">Orders</Link>
-            <Link className="btn btn-ghost normal-case text-xl" to="/login">Login</Link>
+            {
+                user ? <button className="btn btn-ghost normal-case text-xl">Logout</button> : <Link className="btn btn-ghost normal-case text-xl" to="/login">Login</Link>
+            }
             <Link className="btn btn-ghost normal-case text-xl" to="/register">Register</Link>
         </div>
     </div>
