@@ -3,12 +3,12 @@ const cors = require('cors');
 const { MongoClient, ServerApiVersion } = require('mongodb');
 require('dotenv').config();
 const app = express();
-const  port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 
 // midilwere 
 app.use(cors());
 app.use(express.json());
- 
+
 
 
 
@@ -31,13 +31,18 @@ async function run() {
     // Create a Database and a collection 
     const coffeeCollection = client.db('CoffeDB').collection('Coffee');
 
-    // Add a coffee in server and Database 
-    app.post("/coffee", async(req,res)=>{
-        const newCoffe = req.body;
-        console.log(newCoffe);
-        const result = coffeeCollection.insertOne(newCoffe);
-        res.send(result);
+    // Add a coffee in server side and Database 
+    app.post("/coffees", async (req, res) => {
+      const newCoffe = req.body;
+      console.log(newCoffe);
+      const result = coffeeCollection.insertOne(newCoffe);
+      res.send(result);
     })
+
+    // get all  data from database
+    // app.get('/coffees', async(req,res)=>{
+       
+    // })
 
 
     // Send a ping to confirm a successful connection
@@ -45,16 +50,16 @@ async function run() {
     console.log("Pinged your deployment. You successfully connected to MongoDB!");
   } finally {
     // Ensures that the client will close when you finish/error
-    // await client.close();
+    // await client.close();  
   }
 }
 run().catch(console.dir);
 
 
-app.get('/', (req,res)=>{
-    res.send("'Hello Nayme', Welcome to Coffee-store-server-side")
+app.get('/', (req, res) => {
+  res.send("'Hello Nayme', Welcome to Coffee-store-server-side")
 })
 
-app.listen(port,()=>{
-    console.log(`Server is running this port ${port}`);
+app.listen(port, () => {
+  console.log(`Server is running this port ${port}`);
 })
