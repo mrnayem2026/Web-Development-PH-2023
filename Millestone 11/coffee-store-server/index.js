@@ -34,7 +34,6 @@ async function run() {
     // Add a coffee in server side and Database 
     app.post("/coffees", async (req, res) => {
       const newCoffe = req.body;
-      console.log(newCoffe);
       const result = coffeeCollection.insertOne(newCoffe);
       res.send(result);
     })
@@ -43,8 +42,17 @@ async function run() {
     app.get('/coffees', async(req,res)=>{
        const corsor = coffeeCollection.find();
        const result = await corsor.toArray();
-       console.log(result);
        res.send(result)
+    })
+
+    // get specific data from database by id 
+    app.get('/coffees/:id', async(req,res)=>{
+      const id = req.params.id;
+      console.log(id);
+      const query = {_id : new Object(id)}
+      const result = coffeeCollection.findOne(query);
+      console.log(result);
+      res.send(result);
     })
 
 
