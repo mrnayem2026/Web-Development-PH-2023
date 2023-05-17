@@ -40,9 +40,12 @@ async function run() {
     })
 
     // get all  data from database
-    // app.get('/coffees', async(req,res)=>{
-       
-    // })
+    app.get('/coffees', async(req,res)=>{
+       const corsor = coffeeCollection.find();
+       const result = await corsor.toArray();
+       console.log(result);
+       res.send(result)
+    })
 
 
     // Send a ping to confirm a successful connection
